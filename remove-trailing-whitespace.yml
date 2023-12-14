@@ -1,0 +1,8 @@
+# Removes all trailing whitespace, except from markdown files.
+pre-commit:
+  commands:
+    # Needs the sd tool, but eh, it's on most of my systems anyway lol.
+    remove_trailing_whitespace:
+      exclude: '(^|/).+\.md$'
+      stage_fixed: true
+      run: sd '\s+$' '' {staged_files}

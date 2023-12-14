@@ -1,0 +1,7 @@
+# Formats all yaml files with the yamlfmt tool, requires Go toolchain to be installed.
+pre-commit:
+  commands:
+    format-yaml:
+      glob: "*.{yaml,yml}"
+      stage_fixed: true
+      run: go run github.com/google/yamlfmt/cmd/yamlfmt@latest {staged_files}

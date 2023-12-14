@@ -1,0 +1,9 @@
+# This lefthook file can be imported by other repositories with the following
+# configuration:
+#
+# remote:
+#   git_url: https://github.com/nachtjasmin/githooks
+extends:
+  - ./ensure-no-fixup-commits.yml
+  - ./remove-trailing-whitespace.yml
+  - ./format-yaml.yml

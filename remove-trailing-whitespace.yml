@@ -5,4 +5,5 @@ pre-commit:
     remove_trailing_whitespace:
       exclude: '(^|/).+\.md$'
       stage_fixed: true
-      run: sd '\s+$' '' {staged_files}
+      # We only match tabs and spaces, no new lines!
+      run: sd '[\t ]+$' '' {staged_files}

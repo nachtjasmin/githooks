@@ -8,9 +8,10 @@ Feel free to use them in your projects.
 To use all of the checks, use the following snippet in your `lefthook.yml`:
 
 ```yaml
-remote:
+remotes:
   git_url: git@github.com:nachtjasmin/githooks
+  configs:
+    - ensure-no-fixup-commits.yml
+    # ...
 
-# Optionally, you can limit it to one of the files in here:
-# config: <name of the .yml file>, by default all hooks are chosen
 ```

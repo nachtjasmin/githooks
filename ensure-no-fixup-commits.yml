@@ -3,4 +3,4 @@ pre-push:
     check_no_fixup_messages:
       skip: [rebase]
       fail_text: 'Found !fixup commit messages in unpushed history'
-      run: 'git log --oneline --grep "fixup!" --exit-code @{push}...'
+      run: 'git log --oneline --grep "fixup!" --exit-code @{push}... > /dev/null'

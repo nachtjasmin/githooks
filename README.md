@@ -1,5 +1,8 @@
 # githooks
 
+> [!WARNING]
+> This project is no longer maintained as I stopped using pre-commit hooks completely.
+
 Several hooks I am using together with [lefthook](https://github.com/evilmartians/lefthook).
 Feel free to use them in your projects.
 
@@ -15,3 +18,7 @@ remotes:
     # ...
 
 ```
+
+## License
+
+As part of the archival process, all of the code in this repository is now dedicated under the public domain.
